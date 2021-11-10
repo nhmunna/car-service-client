@@ -19,7 +19,7 @@ const Navigation = () => {
     const { user, logOut } = useAuth();
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="static">
+            <AppBar position="fixed">
                 <Toolbar>
                     <IconButton
                         size="large"
@@ -33,7 +33,8 @@ const Navigation = () => {
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                         Wonder Car
                     </Typography>
-                    <NavLink style={style} to='/appointment'><Button color="inherit">Appointment</Button></NavLink>
+                    <NavLink style={style} to='/home'><Button color="inherit">Home</Button></NavLink>
+                    <NavLink style={style} to='/explore'><Button color="inherit">Explore</Button></NavLink>
                     {
                         user?.email ?
                             <Box>
