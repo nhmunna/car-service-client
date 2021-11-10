@@ -10,6 +10,7 @@ import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import ExploreHome from './Pages/Explore/ExploreHome/ExploreHome';
+import Purchase from './Pages/Explore/Purchase/Purchase';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
             </Route>
             <PrivateRoute path="/explore">
               <ExploreHome></ExploreHome>
+            </PrivateRoute>
+            <PrivateRoute path="/purchase/:serviceId">
+              <Purchase></Purchase>
             </PrivateRoute>
             <PrivateRoute path="/dashboard">
 
