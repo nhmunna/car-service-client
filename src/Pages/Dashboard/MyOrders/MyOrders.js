@@ -9,7 +9,7 @@ const MyOrders = () => {
     const [orderDelete, setOrderDelete] = useState(false);
 
     useEffect(() => {
-        const url = `http://localhost:5000/orders?email=${user.email}`;
+        const url = `https://vast-everglades-91773.herokuapp.com/orders?email=${user.email}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setOrders(data))
@@ -18,7 +18,7 @@ const MyOrders = () => {
     const handleDelete = id => {
         const proceed = window.confirm("Are You Sure To Delete?");
         if (proceed) {
-            const url = `http://localhost:5000/orders/${id}`;
+            const url = `https://vast-everglades-91773.herokuapp.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

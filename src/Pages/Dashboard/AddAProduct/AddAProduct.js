@@ -29,7 +29,7 @@ const AddAProduct = () => {
 
 
         //send data to server
-        fetch('http://localhost:5000/services', {
+        fetch('https://vast-everglades-91773.herokuapp.com/services', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

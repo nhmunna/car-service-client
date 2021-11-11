@@ -11,7 +11,7 @@ const Purchase = () => {
     const { user } = useAuth();
     const { name, text, price } = service;
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${serviceId}`)
+        fetch(`https://vast-everglades-91773.herokuapp.com/services/${serviceId}`)
             .then(res => res.json())
             .then(data => setService(data))
     }, []);
@@ -43,7 +43,7 @@ const Purchase = () => {
 
 
         //send data to server
-        fetch('http://localhost:5000/orders', {
+        fetch('https://vast-everglades-91773.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

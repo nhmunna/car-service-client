@@ -8,7 +8,7 @@ const Reviews = () => {
 
     //LOAD DATA FROM SERVER
     useEffect(() => {
-        fetch('http://localhost:5000/review')
+        fetch('https://vast-everglades-91773.herokuapp.com/review')
             .then(res => res.json())
             .then(data => setReviews(data));
     }, [])

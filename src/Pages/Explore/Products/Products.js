@@ -8,7 +8,7 @@ const Products = () => {
 
     //LOAD DATA FROM SERVER
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://vast-everglades-91773.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [])
