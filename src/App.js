@@ -12,6 +12,7 @@ import Register from './Pages/Login/Register/Register';
 import ExploreHome from './Pages/Explore/ExploreHome/ExploreHome';
 import Purchase from './Pages/Explore/Purchase/Purchase';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
+import NotFound from './Pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -25,9 +26,9 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <PrivateRoute path="/explore">
+            <Route path="/explore">
               <ExploreHome></ExploreHome>
-            </PrivateRoute>
+            </Route>
             <PrivateRoute path="/purchase/:serviceId">
               <Purchase></Purchase>
             </PrivateRoute>
@@ -39,6 +40,9 @@ function App() {
             </Route>
             <Route path="/register">
               <Register></Register>
+            </Route>
+            <Route path="*">
+              <NotFound></NotFound>
             </Route>
           </Switch>
         </Router>
