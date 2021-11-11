@@ -11,6 +11,7 @@ import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import ExploreHome from './Pages/Explore/ExploreHome/ExploreHome';
 import Purchase from './Pages/Explore/Purchase/Purchase';
+import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
               <Purchase></Purchase>
             </PrivateRoute>
             <PrivateRoute path="/dashboard">
-
+              <Dashboard></Dashboard>
             </PrivateRoute>
             <Route path="/login">
               <Login></Login>

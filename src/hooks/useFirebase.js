@@ -132,6 +132,8 @@ const useFirebase = () => {
         setIsLoading(true);
         signOut(auth).then(() => {
             // Sign-out successful.
+            // const destination = location?.state?.from || '/';
+            // history.replace(destination);
         }).catch((error) => {
             // An error happened.
         })
