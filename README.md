@@ -4,9 +4,9 @@ and server side link ("https://github.com/programming-hero-web-course-4/niche-we
 live website link("")
 
 This website provides:
-* To show various historical location
-* You can book your tour
-* You can know about various place
-* You can add your service
-* You can delete your service
-* You can update your service
+* To show our exclusive car
+* You can book your order
+* You can know about your desire car
+* You can try free test
+* You can see review
+* You can contact with us
