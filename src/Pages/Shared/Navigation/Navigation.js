@@ -6,24 +6,17 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import { makeStyles } from '@mui/styles';
 import { useTheme } from '@mui/material';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
-import ListItem from '@mui/material/ListItem';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
 
 
-// const style = {
-//     textDecoration: 'none',
-//     color: 'white'
-// }
+
+
 
 const Navigation = () => {
     const { user, logOut } = useAuth();
@@ -69,24 +62,6 @@ const Navigation = () => {
             role="presentation"
         >
             <List>
-                {/* <ListItem button>
-                    <ListItemText><NavLink className={mobileNavItem} to='/home'><Button color="inherit">Home</Button></NavLink></ListItemText>
-                    <Divider />
-                    <ListItemText><NavLink className={mobileNavItem} to='/explore'><Button color="inherit">Explore</Button></NavLink></ListItemText>
-                    <Divider />
-                    <ListItemText>
-                        {
-                            user?.email ?
-                                <>
-                                    <NavLink className={mobileNavItem} to='/dashboard'><Button color="inherit">Dashboard</Button></NavLink>
-                                    <Button onClick={logOut} color="inherit">Logout</Button>
-                                </>
-                                :
-                                <NavLink className={mobileNavItem} to='/login'><Button color="inherit">Login</Button></NavLink>
-                        }
-                    </ListItemText>
-                    <Divider />
-                </ListItem> */}
                 <Box >
                     <NavLink className={mobileNavItem} to='/home'><Button color="inherit">Home</Button></NavLink>
                     <Divider />

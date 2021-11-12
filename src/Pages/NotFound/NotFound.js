@@ -1,4 +1,3 @@
-import { Grid } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 import notFound from '../../images/404.jpg';

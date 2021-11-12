@@ -81,8 +81,8 @@ const useFirebase = () => {
                 const token = credential.accessToken;
                 // The signed-in user info.
                 const user = result.user;
-                console.log(user);
-                // setUser(user);
+                // console.log(user);
+                setUser(user);
                 // ...
                 const destination = location?.state?.from || '/';
                 history.replace(destination);
@@ -132,14 +132,13 @@ const useFirebase = () => {
         setIsLoading(true);
         signOut(auth).then(() => {
             // Sign-out successful.
-            // const destination = location?.state?.from || '/';
-            // history.replace(destination);
         }).catch((error) => {
             // An error happened.
         })
             .finally(() => setIsLoading(false));
     }
 
+    //SAVE USER
     const saveUser = (email, displayName, method) => {
         const user = { email, displayName };
         fetch('https://vast-everglades-91773.herokuapp.com/users', {

@@ -6,23 +6,14 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { Button } from '@mui/material';
 import {
-    BrowserRouter as Router,
     Switch,
     Route,
     Link,
-    NavLink,
-    useParams,
     useRouteMatch
 } from "react-router-dom";
 import useAuth from '../../../hooks/useAuth';
@@ -34,7 +25,7 @@ import ManageAllOrders from '../ManageAllOrders/ManageAllOrders';
 import AddAProduct from '../AddAProduct/AddAProduct';
 import ManageProducts from '../ManageProducts/ManageProducts';
 import AdminRoute from '../../Login/AdminRoute/AdminRoute';
-import Home from '../../Home/Home/Home';
+
 
 
 const drawerWidth = 200;
@@ -56,7 +47,6 @@ function Dashboard(props) {
     const drawer = (
         <div>
             <Toolbar />
-            {/* <NavLink style={style} to='/pay'><Button color="inherit">Pay</Button></NavLink> */}
             <Link style={style} to={`${url}`}><Button color="inherit">Dashboard</Button></Link>
             <Divider />
             {
@@ -152,12 +142,6 @@ function Dashboard(props) {
             >
                 <Toolbar />
                 <Switch>
-                    {/* <Route exact path={path}>
-                        <DashboardHome></DashboardHome>
-                    </Route> */}
-                    {/* <Route path={`${path}/home`}>
-                        
-                    </Route> */}
                     <Route path={`${path}/pay`}>
                         <Pay></Pay>
                     </Route>
