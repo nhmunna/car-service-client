@@ -4,9 +4,8 @@ and server side link ("https://github.com/programming-hero-web-course-4/niche-we
 live website link("https://niche-99a6c.web.app/")
 
 This website provides:
-* To show our exclusive car
-* You can book your order
-* You can know about your desire car
-* You can try free test
-* You can see review
-* You can contact with us
+* This is a car service website where users can book a service.
+* Two types of Dashboard are implemented, normal user and admin.
+* Admins can add service, see all of the orders, etc.
+* Users can see review
+* Users can contact with service provider
